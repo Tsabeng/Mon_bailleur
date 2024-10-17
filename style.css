@@ -1,0 +1,84 @@
+/* Appliquer la police Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 20px; /* Ajout de padding pour éviter que le contenu touche les bords de l'écran */
+}
+
+/* Form container stylisé pour s'adapter à différents écrans */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Prendre 100% de la largeur de son conteneur parent */
+    max-width: 400px; /* Largeur maximale pour les grands écrans */
+    margin: 20px auto; /* Centrer verticalement */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+input {
+    width: 100%; /* Toujours prendre la largeur du conteneur */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+/* --- Media Queries pour les différentes tailles d'écran --- */
+
+/* Pour les tablettes (entre 600px et 1024px de largeur) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .form-container {
+        max-width: 80%; /* Formulaire un peu plus large sur les tablettes */
+    }
+}
+
+/* Pour les ordinateurs (au-delà de 1024px de largeur) */
+@media (min-width: 1024px) {
+    .form-container {
+        max-width: 400px; /* Taille fixe pour les grands écrans */
+    }
+}

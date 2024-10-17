@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    
+    <!-- Importation de la police Roboto via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulaire d'Inscription</h2>
+        <form id="registrationForm">
+            <label for="name">Nom complet <span class="required">*</span>:</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom">
+
+            <label for="email">Email <span class="required">*</span>:</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email">
+
+            <label for="password">Mot de passe <span class="required">*</span>:</label>
+            <input type="password" id="password" name="password" placeholder="Entrez un mot de passe">
+
+            <label for="confirmPassword">Confirmez le mot de passe <span class="required">*</span>:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez le mot de passe">
+
+            <button type="submit" id="submitBtn">S'inscrire</button>
+        </form>
+        <p id="errorMsg" class="error-message"></p>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
